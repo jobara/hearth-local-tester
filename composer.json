@@ -4,8 +4,15 @@
     "description": "The Laravel Framework.",
     "keywords": ["framework", "laravel"],
     "license": "MIT",
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../hearth"
+        }
+    ],
     "require": {
         "php": "^8.0.2",
+        "fluid-project/hearth": "*",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^9.2",
         "laravel/sanctum": "^2.14.1",
