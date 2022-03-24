@@ -54,10 +54,10 @@
         ],
         "update-hearth": [
             "git reset --hard",
-            "composer require fluid-project/hearth",
+            "composer install",
             "php artisan hearth:install",
             "npm install",
-            "php artisan migrate",
+            "php artisan migrate:fresh",
             "php artisan storage:link"
         ]
     },
