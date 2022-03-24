@@ -54,7 +54,8 @@
         ],
         "update-hearth": [
             "git reset --hard",
-            "composer install",
+            "git clean -fd",
+            "composer update",
             "php artisan hearth:install",
             "npm install",
             "php artisan migrate:fresh",
