@@ -51,6 +51,14 @@
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
+        ],
+        "update-hearth": [
+            "git reset --hard",
+            "composer require fluid-project/hearth",
+            "php artisan hearth:install",
+            "npm install",
+            "php artisan migrate",
+            "php artisan storage:link"
         ]
     },
     "extra": {
