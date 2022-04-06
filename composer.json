@@ -56,7 +56,7 @@
             "git reset --hard",
             "git clean -fd",
             "composer update",
-            "php artisan hearth:install",
+            "php artisan hearth:install --two-factor --organizations --resources --no-interaction",
             "npm install",
             "php artisan migrate:fresh",
             "php artisan storage:link"
