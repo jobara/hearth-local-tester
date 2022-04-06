@@ -60,6 +60,9 @@
             "npm install",
             "php artisan migrate:fresh",
             "php artisan storage:link"
+        ],
+        "test": [
+            "XDEBUG_MODE=coverage php artisan test --coverage"
         ]
     },
     "extra": {
